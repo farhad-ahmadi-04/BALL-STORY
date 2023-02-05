@@ -1,0 +1,108 @@
+
+.ballstory{
+    width: 1200px;
+    height: 600px;
+    background-color: rgb(41, 154, 154);
+    margin: 0 auto;
+    position: relative;
+}
+.ballwall{
+    width: 100px;
+    height: 40px;
+    background-color: #000;
+     text-align: left;
+}
+.ball{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+   
+}
+.ball{
+    transition: all;
+    animation-name: move;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes move{
+    0%{
+        transform: translateX(0px);
+    }
+    2%{
+        transform: translateX(80px);
+    }
+    10%{
+        transform: translateX(120px) translateY(500px) scaleX(0.7);
+    }
+    10.50%{
+        transform: translateX(120px) translateY(500px) scaleY(0.7);
+    }
+    /* 19%{
+        transform: translateX(400px) translateY(160px) scaleX(0.7);
+    } */
+    20%{
+       transform: translateX(240px) translateY(100px) scaleX(0.8); 
+    }
+    20.50%{
+        transform: translateX(240px) translateY(100px) scale(1)
+    }
+    /* 20.75%{
+        transform: translate(440px,145px) scale(1);
+    }
+    22%{
+        transform: translate(550px,160px) ;
+    } */
+    30%{
+        transform: translateX(360px) translateY(500px) scaleX(0.7);
+    }
+    30.50%{
+        transform: translateX(360px) translateY(500px) scaleY(0.7)
+    }
+    40%{
+        transform: translate(480px,150px) scaleX(0.8);
+    }
+    40.50%{
+        transform: translate(480px,150px) scale(1);
+    }
+    50%{
+        transform: translate(600px,500px)  scaleX(0.7);
+    }
+    50.50%{
+        transform: translate(600px,500px) scaleY(0.7)
+    }
+    60%{
+        transform: translate(720px, 200px) scaleX(0.8);
+    }
+    60.50%{
+        transform: translate(720px, 200px) scale(1);
+    }
+    70%{
+transform: translate(840px,500px) scaleX(0.7);
+    }
+    70.50%{
+        transform: translate(840px,500px) scaleY(0.7);
+    }
+    80%{
+        transform: translate(900px,250px) scaleX(0.8);
+    }
+    80.50%{
+        transform: translate(900px,250px) scale(1);
+    }
+    90%{
+        transform: translate(980px,500px) scaleX(0.7);
+    }
+    90.50%{
+        transform: translate(980px,500px) scaleY(0.7)
+    }
+    95%{
+        transform: translate(1000px,300px);
+    }
+    95.50%{
+        transform: translate(1000px,300px) scaleX(0.5);
+    }
+    100%{
+        transform: translate(1100px,500px);
+    }
+}
